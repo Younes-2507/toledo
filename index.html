@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Safari</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="icon" href="image.png">
+</head>
+<style>
+   html{scroll-behavior: smooth}
+   @import url('https://fonts.cdnfonts.com/css/azonix');
+   body {
+      background-color: antiquewhite;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins' ,sans-serif;
+      scroll-behavior: smooth;
+      background-image: url(https://img.freepik.com/photos-gratuite/image-fond-papier-peint-abstrait-beige_53876-102527.jpg); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Makes the background image stay fixed */
+   }
+
+   body::-webkit-scrollbar {
+      background-color: transparent;
+   }
+
+   body::-webkit-scrollbar-corner {
+      background-color: transparent;
+   }
+
+   .bandeau {
+      width: 14vw;
+      height: 8vh;
+      text-align: center;
+      font-weight: bold;
+   }
+
+   .bandeau:hover {
+      color: blue;
+      cursor: pointer;
+   }
+
+   .plus {
+      text-align: center;
+      width: 7vw;
+   }
+
+   .image_ensemble {
+      display: flex;
+      width: 100%;
+      margin-top: 40px;
+   }
+
+   .image_container {
+      position: relative;
+      width: 25.5vw;
+      height: 100vh;
+      max-width: 70vw;
+      max-height: 90vh;
+      
+   }
+
+   .image_fond {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+      cursor: pointer;
+      transition: all 800ms ease;
+      margin: 20px;
+   }
+
+   .image_fond:hover {
+      filter: brightness(1);
+      transform: scale(1.04);
+      
+   }
+
+   .text_overlay {
+      position: absolute;
+      top: 90%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2vh;
+      font-weight: bold;
+      text-align: left;
+   }
+   #titre_dans_image{
+      position: absolute;
+      top: 45vh;
+      right: 34vw;
+      color: white;
+   }
+   .header { background-color: #f8f9fa; padding: 20px 0; position: relative; top: 3rem; } .nav { display: flex; justify-content: space-evenly; /* Evenly space the items */ padding: 0 20px; /* Optional: Add some padding to the sides */ } .nav a { text-decoration: none; color:#404040; font-weight: bold; }
+   .headertxt{
+      position: relative;
+      top: 9px;
+      font-size: 20px;
+      transition: 0.3s ease;
+      color: green;
+      position: relative;
+      top: 2rem;
+   }
+   .headertxt:hover{
+      transition: 0.3s ease;
+      font-size: 25px;
+   }
+   .container1 { max-width: 800px; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; position: relative; left: 14rem; top:2rem } .h1 { font-size: 2.5em; color: #007bff; margin-bottom: 20px; } p { font-size: 1.2em; line-height: 1.6; } strong { color: #007bff; }
+   .puydufou{
+      width: 600px;
+      height: auto;
+      border-radius: 50px;
+      transition : 0.3s ease
+   }
+   .puydufou:hover{
+      width: 650px;
+      height: auto;
+      transition: 0.3s ease;
+   }
+   
+   .mongolfiere{
+      width: 600px;
+      height: auto;
+      border-radius: 50px;
+      transition : 0.3s ease
+   }
+   .mongolfiere:hover{
+      width: 650px;
+      height: auto;
+      transition: 0.3s ease;
+   }
+   
+   .soutterain{
+      width: 600px;
+      height: auto;
+      border-radius: 50px;
+      transition : 0.3s ease
+   }
+   .soutterain:hover{
+      width: 650px;
+      height: auto;
+      transition: 0.3s ease;
+   }
+   
+   .catedral{
+      width: 600px;
+      height: auto;
+      border-radius: 50px;
+      transition : 0.3s ease
+   }
+   .catedral:hover{
+      width: 650px;
+      height: auto;
+      transition: 0.3s ease;
+   }
+   
+.slider {
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    animation: slide 16s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 500px;
+    height: 350px;
+    display: block;
+}
+
+/* Animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+.slider2 {
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides2 {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    animation: slide 16s infinite;
+}
+
+.slide2 {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide2 img {
+    width: 500px;
+    height: 350px;
+    display: block;
+}
+
+/* Animation */
+@keyframes slide2 {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+.image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+            grid-template-rows: repeat(2, auto); /* 2 lignes */
+            gap: 20px;
+            width: 80%;
+            max-width: 900px;
+            position: relative;
+            left: -4.5rem;
+        }
+        
+        .image-item {
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-item img {
+            width: 225px;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .image-item img:hover {
+            transform: scale(1.1);
+        }
+        
+        .image-item p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #555;
+            width: 200px;
+        }
+        #cover {
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+#cover > img {
+  float: left;
+  border: 2px solid black;
+  width: 45%;
+  margin: 1.66%;
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+#cover > img:hover{
+   transform: scale(1.2);
+   transition: 0.3s ease;
+}
+
+</style>
+<body>
+  <header>
+   <nav class="nav">
+         <a href="#container1" class="headertxt">Página Principal</a>
+         <a href="#container2" class="headertxt">Actividades Y Monumentos</a>
+         <a href="#container3" class="headertxt">La cultura</a>
+         <a href="#container4" class="headertxt">La historia de Toledo</a> </nav>
+  </header>
+  <div class="image_ensemble">
+     <div class="image_container">
+        <img class="image_fond" src="fond_1.png" alt="">
+        <div class="text_overlay">Paisajes magníficos</div>
+     </div>
+     <div class="image_container">
+        <img class="image_fond" src="fond_2.png" alt="">
+        <div class="text_overlay">Una cultura rica</div>
+     </div>
+     <div class="image_container">
+        <img class="image_fond" src="fond_3.png" alt="">
+        <div class="text_overlay">Un clima perfecto</div>
+     </div>
+     <div class="image_container">
+        <a href=""><img class="image_fond" src="fond_4.png" alt=""></a>
+        <div class="text_overlay">Una experiencia inolvidable</div>
+     </div>
+     <center><h1 id="titre_dans_image">Descubre Toledo</h1></center>
+  </div>
+  <br>
+  <div class="container1" id="container1"><center><h1 class="h1">I - TOLEDO</h1></center> <center> <p> Toledo, situada en el corazón de España, es una joya histórica que cautiva a los visitantes con sus <strong>paisajes impresionantes</strong>, <strong>clima soleado</strong> y <strong>cultura rica y diversa</strong>. Esta ciudad, que combina herencias cristianas, musulmanas y judías, ofrece vistas panorámicas desde sus colinas y riberas, un clima mediterráneo ideal durante todo el año y una arquitectura espectacular, incluyendo la majestuosa Catedral de Toledo y el Alcázar. Con festivales vibrantes y artesanías únicas, cada rincón de Toledo promete una <strong>experiencia inolvidable</strong>. </center></p>
+   <br>
+  <div class="container2" id="container2"><center><h1 class="h2">II - Los Monumentos Y Actividades : </h1></center>
+<center><h2> 1 - PUY DU FOU ESPANA</h2>
+</center><br><center><img src="puydufou.jpg" alt="" class="puydufou"></center>
+<center><h2> 2 - 
+   paseo en globo aero stático
+   </h2></center><center><img src="mongolfiere.jpg" alt="" class="mongolfiere"></center><center><h2>3 - 
+      recorrido subterráneo</h2></center><img src="visitesouterraine.jpg" alt="" class="soutterain">
+      <center><h2>4 - Muchos Monumentos</h2></center>
+      <center><div class="slider">
+         <div class="slides">
+             <!-- Each image container -->
+             <div class="slide"><img src="catedral primada.jpg" alt="Image 1"></div>
+             <div class="slide"><img src="catedral primada2.jpg" alt="Image 2"></div>
+             <div class="slide"><img src="mosquee.jpg" alt="Image 3"></div>
+             <div class="slide"><img src="alcazar de tolede.jpg" alt="Image 4"></div>
+         </div>
+     </div></center>
+<br>
+   <div id="container3"><center><h1>III - LA CULTURA</h1></center>
+   <center><h2> 1 - Las tradiciones</h2></center></div>
+
+   
+   <center><div class="slider"><div class="slides2">
+      <!-- Each image container -->
+      <div class="slide2"><img src="corpuschristi.jpg" alt="Image 2"></div>
+      <div class="slide2"><img src="corridasdetoro.jpg" alt="Image 1"></div>
+      <div class="slide2"><img src="festival.jpg" alt="Image 3"></div>
+      <div class="slide2"><img src="romeria-virgen-del-valle.jpg" alt="Image 4"></div>
+  </div></div></center>
+  <center><h2>2 - La comida </h2></center>
+  <center><div class="image-grid">
+   <div class="image-item">
+       <img src="gazpacho.webp" alt="Description 1">
+       <p>El Gazpacho Montego</p>
+   </div>
+   <div class="image-item">
+       <img src="migas.jpg" alt="Description 2">
+       <p>Las Migas</p>
+   </div>
+   <div class="image-item">
+       <img src="cochon.jpg" alt="Description 3">
+       <p>El Cochinillo Asado</p>
+   </div>
+   <div class="image-item">
+       <img src="avila.jpg" alt="Description 4">
+       <p>Las Yemas de Avila</p>
+   </div>
+   <div class="image-item">
+       <img src="donuts.jpg" alt="Description 5">
+       <p>Las Rosquillas de Toledo</p>
+   </div>
+   <div class="image-item">
+       <img src="carcamucha.jpg" alt="Description 6">
+       <p>Las Carcamusas</p>
+   </div>
+</div></center>
+<br>
+<div id="container4"><center><h1>IV - La Historia </h1></center>
+   <center><div id="cover">
+      <img class="imagesh" src="synagogue.jpeg">
+      <img class="imagesh" src="vestigesislamiques.png">
+      <img class="imagesh" src="cathedralegothique.png">
+      <img class="imagesh" src="catedral primada.jpg">
+    </div></center>
+</div>
+</body>
+</html>
